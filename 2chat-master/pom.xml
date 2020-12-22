@@ -1,0 +1,196 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.pjproductions.chat</groupId>
+  <artifactId>chat</artifactId>
+  <packaging>war</packaging>
+  <version>0.2-ALPHA</version>
+  <name>chat Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <jetty.version>9.4.7.v20170914</jetty.version>
+    <jersey.version>2.26</jersey.version>
+      <npm.output.directory>build</npm.output.directory>
+      <NPM_CONFIG_PREFIX>${basedir}/npm</NPM_CONFIG_PREFIX>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+      <dependency>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-io</artifactId>
+          <version>${jetty.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-server</artifactId>
+          <version>${jetty.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-servlet</artifactId>
+          <version>${jetty.version}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-webapp</artifactId>
+          <version>${jetty.version}</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-plus -->
+      <dependency>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-plus</artifactId>
+          <version>${jetty.version}</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-common -->
+      <dependency>
+          <groupId>org.glassfish.jersey.core</groupId>
+          <artifactId>jersey-common</artifactId>
+          <version>${jersey.version}</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.inject/jersey-hk2 -->
+      <dependency>
+          <groupId>org.glassfish.jersey.inject</groupId>
+          <artifactId>jersey-hk2</artifactId>
+          <version>2.26</version>
+      </dependency>
+
+      <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>
+          <version>2.9.2</version>
+      </dependency>
+      <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-annotations</artifactId>
+          <version>2.9.2</version>
+      </dependency>
+
+      <dependency>
+          <groupId>com.fasterxml.jackson.jaxrs</groupId>
+          <artifactId>jackson-jaxrs-json-provider</artifactId>
+          <version>2.9.2</version>
+      </dependency>
+
+      <dependency>
+          <groupId>com.fasterxml.jackson.datatype</groupId>
+          <artifactId>jackson-datatype-jsr310</artifactId>
+          <version>2.9.2</version>
+      </dependency>
+      <dependency>
+          <groupId>com.fasterxml.jackson.datatype</groupId>
+          <artifactId>jackson-datatype-jdk8</artifactId>
+          <version>2.9.2</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.glassfish.jersey.core</groupId>
+          <artifactId>jersey-server</artifactId>
+          <version>${jersey.version}</version>
+      </dependency>
+
+    <dependency>
+      <groupId>org.glassfish.jersey.containers</groupId>
+      <artifactId>jersey-container-servlet-core</artifactId>
+      <version>${jersey.version}</version>
+    </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.security/oauth1-signature -->
+      <dependency>
+          <groupId>org.glassfish.jersey.security</groupId>
+          <artifactId>oauth1-signature</artifactId>
+          <version>2.26</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.bitbucket.b_c</groupId>
+          <artifactId>jose4j</artifactId>
+          <version>0.6.1</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/commons-validator/commons-validator -->
+      <dependency>
+          <groupId>commons-validator</groupId>
+          <artifactId>commons-validator</artifactId>
+          <version>1.6</version>
+      </dependency>
+
+      <dependency>
+          <groupId>javax.enterprise</groupId>
+          <artifactId>cdi-api</artifactId>
+          <version>2.0</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.ext.cdi/jersey-cdi1x -->
+      <dependency>
+          <groupId>org.glassfish.jersey.inject</groupId>
+          <artifactId>jersey-cdi2-se</artifactId>
+          <version>${jersey.version}</version>
+          <scope>provided</scope>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.ext/jersey-bean-validation -->
+      <dependency>
+          <groupId>org.glassfish.jersey.ext</groupId>
+          <artifactId>jersey-bean-validation</artifactId>
+          <version>${jersey.version}</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-text -->
+      <dependency>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-text</artifactId>
+          <version>1.1</version>
+      </dependency>
+
+
+  </dependencies>
+
+  <build>
+    <finalName>chat</finalName>
+    <plugins>
+    <plugin>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-maven-plugin</artifactId>
+      <version>${jetty.version}</version>
+      <configuration>
+        <server>JettyServer</server>
+      </configuration>
+    </plugin>
+        <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+            </configuration>
+        </plugin>
+    <plugin>
+      <artifactId>maven-war-plugin</artifactId>
+      <version>3.2.0</version>
+      <configuration>
+        <webResources>
+            <resource>
+            </resource>
+        </webResources>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+      </configuration>
+    </plugin>
+    </plugins>
+  </build>
+
+
+</project>

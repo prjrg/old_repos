@@ -1,0 +1,15 @@
+{
+  "name": "2Chat",
+  "short_name": "2Chat",
+  "description": "A simple Chat 2Chat",
+  "icons": [
+    {
+      "src": "resources/favicon.ico",
+      "sizes": "192x192 128x128 64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "./index.html",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

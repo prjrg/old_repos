@@ -1,0 +1,22 @@
+name:                 jam-sessions-church-numerals
+version:              0.1.0.0
+synopsis:
+-- description:
+-- license:
+-- license-file:
+homepage:
+author:               Pedro
+maintainer:           pmrjg@outlook.com
+category:
+-- copyright:
+build-type:           Simple
+-- extra-source-files:
+cabal-version:        >=1.10
+
+executable jam-sessions-church-numerals
+  main-is:              Main.hs
+  -- other-modules:
+  -- other-extensions:
+  build-depends:        base >= 4.7 && < 5
+  hs-source-dirs:       src
+  default-language:     Haskell2010

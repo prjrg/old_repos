@@ -1,0 +1,101 @@
+.label-chat{
+    color: lightgrey;
+    font-family: 'Lobster', cursive;
+    font-size: 100%;
+}
+
+.form-btn-chat{
+    background: #212529;
+    color: lightgrey;
+    font-family: 'Lobster', cursive;
+    font-size: 100%;
+}
+
+.submit-chat{
+    background: #212529;
+    color: lightgrey;
+    font-family: 'Lobster', cursive;
+    font-size: 100%;
+}
+
+.input-chat{
+    color: #6c757d;
+    font-family: 'Lobster', cursive;
+    font-size: 100%;
+}
+
+.input-chat-login{
+    color: #6c757d;
+    font-family: 'Lobster', cursive;
+    font-size: 100%;
+    margin-right: 0.2vw;
+}
+
+#logonav{
+    font-size: 5vh;
+    text-shadow: 0.3vh 0.3vw rgba(0,0,0,0.7);
+    font-family: 'Pacifico', cursive;
+    color: white;
+}
+
+.top-page{
+    width: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    display: block;
+
+}
+
+.App{
+    height: 100%;
+    width: 100%;
+}
+
+.Home-body {
+    color: #e9ecef;
+    height: 60%;
+    width: 100%;
+    background: linear-gradient(to right, #212529, rgb(81, 85, 89) 65%, #212529);
+}
+
+hr.chat-line{
+    background-color: #6c757d;
+    border: 0;
+    height: 0.2vh;
+    box-shadow: 0 0.2vh 0.2vh -0.2vh #1b1e21 inset;
+}
+
+h1.home{
+    font-family: 'Courgette', cursive;
+    font-size: 6vh;
+}
+
+p.home {
+    font-family: 'Courgette', cursive;
+    font-size: 3vh;
+}
+
+p.header{
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 150%;
+}
+
+.centerOnPage {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-items-chat{
+    color: #e9ecef;
+}
+
+span.nav-items-chat{
+    color: #e9ecef;
+    font-family: 'Lobster', cursive;
+    font-size: 100%;
+}
+

@@ -1,0 +1,54 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 1 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: src/chapter9/atari_breakout_tf.py
+--------------------------------------------------------------------------------
+src/chapter9/atari_breakout_tf.py:397:12: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'src/chapter9/atari_breakout_tf.py'
+ outputting to 'src/chapter9/atari_breakout_tfv2.py'
+--------------------------------------------------------------------------------
+
+33:4: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+35:14: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+45:32: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+48:32: INFO: Renamed 'tf.trainable_variables' to 'tf.compat.v1.trainable_variables'
+58:16: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+62:62: INFO: Renamed 'tf.train.get_global_step' to 'tf.compat.v1.train.get_global_step'
+65:12: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+72:20: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+73:20: INFO: Renamed 'tf.local_variables_initializer' to 'tf.compat.v1.local_variables_initializer'
+78:20: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+79:20: INFO: Renamed 'tf.local_variables_initializer' to 'tf.compat.v1.local_variables_initializer'
+94:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+96:28: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+99:27: INFO: Changed tf.to_float call to tf.cast(..., dtype=tf.float32).
+102:29: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+105:29: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+108:17: INFO: Renamed 'tf.layers.conv2d' to 'tf.compat.v1.layers.conv2d'
+110:17: INFO: Renamed 'tf.layers.conv2d' to 'tf.compat.v1.layers.conv2d'
+112:17: INFO: Renamed 'tf.layers.conv2d' to 'tf.compat.v1.layers.conv2d'
+116:20: INFO: Renamed 'tf.layers.flatten' to 'tf.compat.v1.layers.flatten'
+117:15: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+120:23: INFO: Renamed 'tf.layers.dense' to 'tf.compat.v1.layers.dense'
+123:21: INFO: Added keywords to args of function 'tf.shape'
+124:48: INFO: Added keywords to args of function 'tf.shape'
+129:15: INFO: tf.losses.huber_loss requires manual check. tf.losses have been replaced with object oriented versions in TF 2.0 and after. The loss function calls have been converted to compat.v1 for backward compatibility. Please update these calls to the TF 2.0 versions.
+129:15: INFO: Renamed 'tf.losses.huber_loss' to 'tf.compat.v1.losses.huber_loss'
+131:46: INFO: Renamed 'tf.losses.Reduction.MEAN' to 'tf.compat.v1.losses.Reduction.MEAN'
+169:9: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+170:28: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+173:26: INFO: Renamed 'tf.image.resize_images' to 'tf.image.resize'
+194:30: INFO: Renamed 'tf.train.get_global_step' to 'tf.compat.v1.train.get_global_step'
+281:30: INFO: Renamed 'tf.train.get_global_step' to 'tf.compat.v1.train.get_global_step'
+397:12: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+398:35: INFO: Renamed 'tf.train.get_global_step' to 'tf.compat.v1.train.get_global_step'
+--------------------------------------------------------------------------------
+

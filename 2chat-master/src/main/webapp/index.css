@@ -1,0 +1,7 @@
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: inline;
+    background: linear-gradient(to right, #212529, rgb(81, 85, 89) 65%, #212529);
+}
+
